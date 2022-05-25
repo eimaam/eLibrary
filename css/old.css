@@ -1,0 +1,249 @@
+
+
+section{
+    width: 100%;
+    padding: 5rem 0;
+    color: var(--default);
+}
+.section-light{
+    width: 100%;
+    background-color: var(--default);
+    color: var(--dark);
+    padding: 5rem 0;
+}
+section > div {
+    margin: auto;
+    width: 70%;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.2rem;
+    padding-inline: 2rem;
+    margin: 0;
+    z-index: 999;
+}
+#mNav{
+    display: none;
+}
+nav{
+    line-height: 0;
+}
+nav li{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+.title {
+    height: calc(100vh);
+    background-image: url('/images/3d-flame-office-workers-waiting-7.png');
+    background-size:50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-left: 5rem;
+    padding: 5rem;
+}
+.project-title{
+    margin: auto;
+    padding: 40vh;
+    height: calc(100vh);
+    background-image: url('/images/undraw_Portfolio_re_qwm5.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 80%;
+    text-align: center;
+}
+.project-title .fa-angles-down{
+    color: var(--dark);
+}
+.fa-angles-down{
+    position: absolute;
+    text-align: center;
+    font-size: 4rem;
+    bottom: 5%;
+}
+/* Cards */
+.card{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 30rem;
+    border: 1px solid var(--border);
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--border);
+    text-align: center !important;
+    transition: 300ms all;
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.card > p{
+    font-size: 1rem;
+}
+.card > img{
+    margin: auto;
+    width: 40%;
+}
+
+/* projects */
+#projects img:hover{
+    transform: scale(1.1);
+    transition: 300ms all;
+}
+
+
+
+@media only screen and (max-width: 480px){
+    /* body *{
+        border: solid red;
+    } */
+    html{
+        scroll-behavior: smooth;
+    }
+    .flex{
+        flex-direction: column-reverse;
+        
+    }
+    .flex div{
+        width: 100%;
+    }
+    .flexCol{
+        flex-direction: row;
+    }
+    .gridCol{
+        grid-auto-flow: row;
+    }
+    .grid{
+        grid-auto-flow: column;
+    }
+    h1{
+        font-size: 2rem;
+        padding: 0;
+        margin: 0;
+        margin-top: 10vh;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    small{
+        font-size: 1.1rem;
+        padding: 0;
+        margin: 0;
+    }
+    p{
+        font-size: 1rem;
+    }
+    #hamburger{
+        text-align: right;
+        display: block;
+    }
+    #logo{
+        display: none;
+    }
+    #mLogo{
+        width: 2rem;
+        height: 2rem;
+    }
+    .fa-moon, .fa-brightness, .fa-angles-down{
+        display: none !important;
+    }
+    button{
+        padding: 0.5rem 2rem;
+    }
+    nav{
+        display: none;
+    }
+    header{
+        display: block;
+        padding-inline: 1rem;
+    }
+    #mNav{
+        width: 80%;
+        display: none;
+        inset: 0 0 0 20%;
+        position: fixed;
+        opacity: 0.85;
+        background-color: var(--primary);
+        backdrop-filter: blur(1rem);
+        padding: 1rem;
+        padding-top: min(5rem, 10vh);
+        z-index: 1000;
+        transition: 300ms ease-in-out;
+    }
+    #mNav > div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    #mNav i{
+        font-size: 2rem;
+    }
+    #mNav li{
+        font-size: 2rem;
+        padding: 2rem 0;
+        border-bottom: 1px solid var(--border);
+    }
+    #mNav p{
+        margin-top: 3rem;
+    }
+    .title{
+        background-position: center;
+        background-size: contain;
+        height: 60vh;
+        padding: 0;
+        margin: 0;
+        padding-inline: 1rem;
+        background-position-y: 100px;
+    }
+    section > div {
+        width: 85%;
+    }
+
+
+    footer{
+        padding: 0;
+        margin: 0;
+    }
+    footer div{
+        flex-direction: column;
+    }
+
+
+
+
+
+}
+#projects-images > img{
+    margin: auto;
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: 540ms ease-in-out;
+}
+#projects-images > img:hover{
+    transform: scale(1.05);
+}
+
+
+.gallery{
+    padding: 0 6px;
+}
+.portfolio-img img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px 0 var(--default);
+}
+
+.endNote{
+    margin: auto;
+    background-color: rgb(186, 231, 231);
+    text-align: center;
+    color: var(--border);
+}
